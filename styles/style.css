@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(90deg, #8d1eb5, #214669);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+#content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+header h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.new-task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #fafafafa;
+    padding-bottom: 20px;
+}
+
+.new-task input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.new-task button {
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #4e0d56;
+    transition: 0.3s ease-out;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s ease-out;
+}
+
+.new-task button:hover {
+    opacity: 1;
+}
+
+#todo {
+    width: 100%;
+    min-height: 45px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.new-li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.new-li:last-child {
+    margin-bottom: 0;
+}
+
+#todo li {
+    font-size: 18px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    font-size: 25px;
+}
+
+.fa-square-check {
+    cursor: pointer;
+    color: #02ab43;
+}
+
+.fa-square-minus {
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.check {
+    text-decoration: line-through;
+    color: #02ab43;
+}
